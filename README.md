@@ -1,21 +1,19 @@
-# CombiGCN
-
-This is our improvement Tensorflow based on code of https://github.com/kuandeng/LightGCN
-References:
-
-
-## Introduction
+# CombiGCN - Introduction
 * GCCF : Our final model, in which interation data and social friendship data are aggregated.
 * CombiGCN: Our model with only interaction between users and items take into account.
 * SocialfnLGN: Our model with social friendship data is considered. We remove the matrix contains corelation between users and items.
-* BPRMF:
-* GCMC :
-* LightGCN : Based on He, X., Deng, K., Wang, X., Li, Y., Zhang, Y. & Wang, M. LightGCN: Simplifying and Powering Graph Convolution Network for Recommendation. (2020)  https://arxiv.org/pdf/2002.02126
-* NGCF :
-* SEPT
-* SocialLLGN
-* SocialfnLGN :
+* BPRMF: Koren, Y., Bell, R. & Volinsky, C. Matrix Factorization Techniques for Recommender Systems. Computer. 42, 30-37 (2009), https://ieeexplore.ieee.org/document/5197422
+* GCMC : Berg, R., Kipf, T. & Welling, M. Graph Convolutional Matrix Completion. (2017), https://arxiv.org/abs/1706.02263 
+* LightGCN : He, X., Deng, K., Wang, X., Li, Y., Zhang, Y. & Wang, M. LightGCN: Simplifying and Powering Graph Convolution Network for Recommendation (2020), https://arxiv.org/pdf/2002.02126
+* NGCF : Wang, X., He, X., Wang, M., Feng, F. & Chua, T. Neural Graph Collaborative Filtering. CoRR. abs/1905.08108 (2019), http://arxiv.org/abs/1905.08108
+* SEPT : Yu, J., Yin, H., Gao, M., Xia, X., Zhang, X. & Hung, N. Socially Aware Self-Supervised Tri-Training for Recommendation. CoRR. abs/2106.03569 (2021), https://arxiv.org/abs/2106.03569
+* SocialLLGN : Liao, J., Zhou, W., Luo, F., Wen, J., Gao, M., Li, X. & Zeng, J. SocialLGN: Light graph convolution network for social  ecommendation. Information Sciences. 589 pp. 595-607 (2022), https://www.sciencedirect.com/science/article/pii/S0020025522000019
+* SocialfnLGN : SocialLGN remove weighted matrices and non-linear activation function.
 
+## Acknowledgement
+* We thank our colleagues and reviewers for their comments.
+* This is our improvement Tensorflow based on code of https://github.com/kuandeng/LightGCN
+  
 ## Environment Requirement
 The code has been tested running under Python 3.10.9 The required packages are as follows:
 * tensorflow == 2.11.0
