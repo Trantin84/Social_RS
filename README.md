@@ -1,12 +1,20 @@
 # CombiGCN
 
 This is our improvement Tensorflow based on code of https://github.com/kuandeng/LightGCN
+References:
 
 
 ## Introduction
-* GCCF : Our model all
-* CombiGCN: Our w/ interact
-* SocialfnLGN: Our w/ social
+* GCCF : Our final model, in which interation data and social friendship data are aggregated.
+* CombiGCN: Our model with only interaction between users and items take into account.
+* SocialfnLGN: Our model with social friendship data is considered. We remove the matrix contains corelation between users and items.
+* BPRMF:
+* GCMC :
+* LightGCN : Based on He, X., Deng, K., Wang, X., Li, Y., Zhang, Y. & Wang, M. LightGCN: Simplifying and Powering Graph Convolution Network for Recommendation. (2020)  https://arxiv.org/pdf/2002.02126
+* NGCF :
+* SEPT
+* SocialLLGN
+* SocialfnLGN :
 
 ## Environment Requirement
 The code has been tested running under Python 3.10.9 The required packages are as follows:
