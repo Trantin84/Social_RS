@@ -1,7 +1,6 @@
 # CombiGCN - Introduction
 * GCCF : Our final model, in which interation data and social friendship data are aggregated.
 * CombiGCN: Our model with only interaction between users and items take into account.
-* SocialfnLGN: Our model with social friendship data is considered. We remove the matrix contains corelation between users and items.
 * BPRMF: Koren, Y., Bell, R. & Volinsky, C. Matrix Factorization Techniques for Recommender Systems. Computer. 42, 30-37 (2009), https://ieeexplore.ieee.org/document/5197422
 * GCMC : Berg, R., Kipf, T. & Welling, M. Graph Convolutional Matrix Completion. (2017), https://arxiv.org/abs/1706.02263 
 * LightGCN : He, X., Deng, K., Wang, X., Li, Y., Zhang, Y. & Wang, M. LightGCN: Simplifying and Powering Graph Convolution Network for Recommendation (2020), https://arxiv.org/pdf/2002.02126
