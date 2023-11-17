@@ -215,8 +215,6 @@ class LightGCN(object):
         else:
             A_fold_hat = self._split_A_hat(self.norm_adj)
 
-        SI_fold_hat = self._split_SI_hat(self.similar_users_adj)
-
         users_embed = self.weights['user_embedding']
         items_embed = self.weights['item_embedding']
 
@@ -231,20 +229,7 @@ class LightGCN(object):
                 temp_embed_interaction.append(tf.sparse_tensor_dense_matmul(A_fold_hat[fold], ego_embed))
             all_embed_interaction = tf.concat(temp_embed_interaction, axis=0)
 
-            temp_embed_similar_users = []
-            for fold in range(self.n_fold):
-                temp_embed_similar_users.append(tf.sparse_tensor_dense_matmul(SI_fold_hat[fold], users_embed))
-            users_embed_similar = tf.concat(temp_embed_similar_users, axis=0)
-
-            users_embed_interaction, items_embed_next = tf.split(all_embed_interaction, [self.n_users, self.n_items],
-                                                                 0)
-            fusion_embed_users = [users_embed_interaction, users_embed_similar]
-            fusion_embed_users = tf.stack(fusion_embed_users, 1)
-            users_embed_next = tf.reduce_sum(fusion_embed_users, axis=1, keepdims=False)
-
-            ego_embed_next = tf.concat([users_embed_next, items_embed_next], axis=0)
-
-            ego_embed = ego_embed_next
+            ego_embed = all_embed_interaction
 
             all_embed += [ego_embed]
 
