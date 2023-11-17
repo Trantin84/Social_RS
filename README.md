@@ -1,4 +1,4 @@
-# Introduction
+# Introduction - GCCF
 * GCCF : Our final model, in which interation data and social friendship data are aggregated. Which is publication "Combining social relations and interaction data in Recommender System with Graph Convolution Collaborative Filtering" - IEEE Access.
 * CombiGCN: Our model with only interaction between users and items take into account.
 * BPRMF: Koren, Y., Bell, R. & Volinsky, C. Matrix Factorization Techniques for Recommender Systems. Computer. 42, 30-37 (2009), https://ieeexplore.ieee.org/document/5197422
