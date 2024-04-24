@@ -1,5 +1,8 @@
 This code is used in publication 
+```
 T. T. Tran, V. Snasel and L. T. Nguyen, "Combining Social Relations and Interaction Data in Recommender System With Graph Convolution Collaborative Filtering," in IEEE Access, vol. 11, pp. 139759-139770, 2023, doi: 10.1109/ACCESS.2023.3340209
+```
+Open access in https://doi.org/10.1109/access.2023.3340209
 
 # Introduction - GCCF
 * GCCF : Our final model, in which interation data and social friendship data are aggregated. Which is publication "Combining social relations and interaction data in Recommender System with Graph Convolution Collaborative Filtering" - IEEE Access.
